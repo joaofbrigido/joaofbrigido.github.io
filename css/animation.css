@@ -20,10 +20,23 @@
     }
 }
 
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 .mainText h2, .mainText span, .mainText a {
     animation: show-left .5s forwards;
 }
 
 .mainContent img {
     animation: show-right .5s forwards;
+}
+
+.mainText h1::after {
+  animation: blink .7s infinite;
 }

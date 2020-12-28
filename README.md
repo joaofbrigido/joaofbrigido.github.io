@@ -1,1 +1,1 @@
-Home do Github para facilitar a vizualização dos projetos
+Página Home do Github para facilitar a vizualização dos projetos

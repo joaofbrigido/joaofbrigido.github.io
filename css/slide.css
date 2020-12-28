@@ -1,0 +1,67 @@
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* SLIDE */
+.slide-wrapper {
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+}
+
+.slide:hover {  /* Aumentar a performace informando q o transform mudará */
+    will-change: transform;
+}
+
+.slide li {
+    flex-shrink: 0;
+    width: 80vw;
+    max-width: 800px;
+    text-align: center;
+    /* margin: 0 20px; */
+
+    border-radius: 4px;
+    overflow: hidden;
+
+    opacity: .8;
+    transform: scale(.8);
+    transition: .4s;
+}
+.slide img {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
+
+.slide li.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.custom-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.custom-controls li {
+    transform: scale(.8);
+    transition: .3s;
+    cursor: pointer;
+
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 6px;
+    text-indent: -999px;
+}
+.custom-controls li.active {
+    transform: scale(1);
+    background: none;
+    border: 1px solid white;
+}

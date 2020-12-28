@@ -89,12 +89,13 @@ a {
     color: white;
 }
 
+/* PROJETOS */
 .projects {
     width: 100%;
     margin-top: 100px;
     background: linear-gradient(120deg, #7A55E5, #4624A7);
 }
-.projects h2, span {
+.projects h2, span, p {
     color: white;
 }
 
@@ -114,12 +115,20 @@ a {
 .slide a, p {
     color: white;
     margin: 0 auto;
+    line-height: 1.5;
+}
+
+.slide span {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .slide li a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
+    font-family: 'montserat', sans-serif;
     display: inline-block;
+    color: #111111;
 }
 
 .slide a::after {

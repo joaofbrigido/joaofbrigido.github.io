@@ -1,23 +1,12 @@
-@keyframes show-left {
-    from {
-      opacity: 0;
-      transform: translate3d(-30px,0,0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0,0,0);
-    }
-}
-
-@keyframes show-right {
-    from {
-      opacity: 0;
-      transform: translate3d(30px,0,0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0,0,0);
-    }
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0,40px,0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
 }
 
 @keyframes blink {
@@ -29,12 +18,17 @@
   }
 }
 
-.mainText h2, .mainText span, .mainText a {
-    animation: show-left .5s forwards;
+.mainText h2, .mainText h1 {
+    animation: show-up .3s forwards;
 }
-
+.mainText p {
+  animation: show-up .5s forwards;
+}
+.mainText a {
+  animation: show-up .7s forwards;
+}
 .mainContent img {
-    animation: show-right .5s forwards;
+    animation: show-up 1s forwards;
 }
 
 .mainText h1::after {

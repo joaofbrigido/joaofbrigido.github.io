@@ -20,7 +20,7 @@
     }
 }
 
-@media (max-width: 915px) {
+@media (max-width: 920px) {
     .mainText h2 {
         font-size: 1rem;
     }
@@ -33,6 +33,11 @@
         font-size: 1rem;
     }
 
+    .mainText a {
+        font-size: 1rem;
+        width: 220px;
+    }
+
     .ornament1, .ornament2{
         display: none;
     }
@@ -43,12 +48,10 @@
         grid-column: 1 / -1;
         justify-self: start;
     }
-    .mainText a {
-        font-size: 1rem;
-        width: 220px;
-    }
     .mainContent img {
         grid-column: 1 / -1;
         justify-self: start;
+        min-width: 0;
+        min-height: 0;
     }
 }

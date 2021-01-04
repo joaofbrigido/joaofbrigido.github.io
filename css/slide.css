@@ -21,10 +21,6 @@ img {
     width: 80vw;
     max-width: 800px;
     text-align: center;
-    /* margin: 0 20px; */
-
-    border-radius: 4px;
-    overflow: hidden;
 
     opacity: .8;
     transform: scale(.8);
@@ -37,6 +33,11 @@ img {
 .slide li.active {
     opacity: 1;
     transform: scale(1);
+}
+
+.slide li div img {
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .custom-controls {

@@ -55,7 +55,8 @@ img {
     display: block;
     width: 16px;
     height: 16px;
-    background-color: white;
+    background: none;
+    border: 1px solid white;
     border-radius: 50%;
     overflow: hidden;
     margin: 6px;
@@ -63,6 +64,5 @@ img {
 }
 .custom-controls li.active {
     transform: scale(1);
-    background: none;
-    border: 1px solid white;
+    background-color: white;
 }

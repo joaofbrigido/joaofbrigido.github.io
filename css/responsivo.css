@@ -4,7 +4,7 @@
   }
   .mainContainer,
   .skills ul,
-  .sobreContent,
+  .sobreContent section,
   .contatoContent ul {
     justify-content: center;
   }

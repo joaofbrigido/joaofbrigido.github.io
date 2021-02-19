@@ -1,60 +1,100 @@
-@media (max-width: 1200px) {
-    .mainContent img {
-        grid-column: 7 / -1;
-    }
-    
-    .mainText {
-        grid-column: 1 / 6;
-    }
+@media (max-width: 1100px) {
+  .container {
+    max-width: 50rem;
+  }
+  .mainContainer,
+  .skills ul,
+  .sobreContent,
+  .contatoContent ul {
+    justify-content: center;
+  }
 
-    .mainText h2 {
-        font-size: 1.2rem;
-    }
-    
-    .mainText h1 {
-        font-size: 2.3rem;
-    }
-    
-    .mainText span {
-        font-size: 1.2rem;
-    }
+  .projetos ul li {
+    margin-right: 1px;
+  }
+
+  .skills ul li {
+    margin-right: 1rem;
+  }
+
+  .sobreContent {
+    text-align: center;
+  }
+  .sobreContent img {
+    margin-bottom: 2.5rem;
+  }
+
+  .contatoContent ul li {
+    margin: 2rem 1.2rem 1.2rem 1.2rem;
+  }
 }
 
-@media (max-width: 920px) {
-    .mainText h2 {
-        font-size: 1rem;
-    }
-    
-    .mainText h1 {
-        font-size: 2rem;
-    }
-    
-    .mainText span {
-        font-size: 1rem;
-    }
+@media (max-width: 570px) {
+  .mainContent,
+  .mainContainer div img {
+    padding: 1rem;
+  }
+  .mainContent p,
+  .mainContent span {
+    font-size: 1rem;
+    margin-right: 0.3rem;
+  }
+  .mainContent a {
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+  }
 
-    .mainText a {
-        font-size: 1rem;
-        width: 220px;
-    }
+  .quebra div p {
+    font-size: 1rem;
+  }
 
-    .ornament1, .ornament2{
-        display: none;
-    }
-}
+  .projetos {
+    padding: 1rem;
+  }
+  .projetos ul li a {
+    margin-bottom: 1.2rem;
+  }
 
-@media (max-width: 815px) {
-    .mainText {
-        grid-column: 1 / -1;
-        justify-self: start;
-    }
-    .mainContent img {
-        grid-column: 1 / -1;
-        justify-self: start;
-        min-width: 0;
-        min-height: 0;
-    }
-    .footer a{
-        margin: 1rem 0 0 0;
-    }
+  .skills ul {
+    padding: 1rem;
+  }
+  .skills ul li {
+    margin-right: 0;
+  }
+
+  .sobre {
+    padding: 1rem;
+  }
+
+  .contatoContent ul li p {
+    font-size: 1rem;
+  }
+
+  .mainContent h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+    display: inline-block;
+  }
+
+  h3 {
+    font-family: var(--type-first);
+    color: #aaaaaa;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-family: var(--type-second);
+    color: #f2f1f1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .btnMenu {
+    display: none;
+  }
 }

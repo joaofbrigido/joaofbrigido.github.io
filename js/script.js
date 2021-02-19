@@ -1,13 +1,7 @@
-import SlideNav from './modules/slide.js'
-import ScrollSuave from './modules/scroll-suave.js'
-import typeWriter from './modules/maquina-escrever.js'
+import Menu from './menu.js';
+import ScrollSuave from './scrollSuave.js';
 
-const slide = new SlideNav('.slide', '.slide-wrapper');
-slide.init();
-slide.addControl('.custom-controls');
+Menu();
 
-const scrollSuave = new ScrollSuave('.btnProjects');
+const scrollSuave = new ScrollSuave('a[href^="#"]');
 scrollSuave.init();
-
-const titulo = document.querySelector('.mainText h1');
-typeWriter(titulo);

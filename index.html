@@ -1,91 +1,205 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="author" content="João Fernando">
+  <meta name="description" content="Portfólio João Fernando A. Brigido">
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <title>Github Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <title>Portfólio Pessoal</title>
 </head>
 
 <body>
-    <main class="mainContent">
-        <div class="mainText">
-            <h2>Olá, eu sou o João Fernando e me interesso por</h2>
-            <h1>UI/UX Design e Desenvolvimento Front-End</h1>
-            <p>Conheça alguns dos meus Projetos</p>
-            <a class="btnProjects" href="#projects">Ver Projetos</a>
-        </div>
 
-        <img src="./img/ilustracaoPrincipal.svg" alt="Ilustracao Principal">
-    </main>
+  <header>
+    <button class="btnMenu">Menu</button>
 
-    <img class="ornament2" src="./img/enfeiteDeitado.svg">
+    <nav class="menuContent animeMenu">
+      <button class="btnFechar">
+        Fechar
+        <img src="./imgs/svgs/IconFecharMenu.svg">
+      </button>
+      <span class="animeDown">Menu</span>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projetos">Portfólio</a></li>
+        <li><a href="#habilidades">Skills</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="projects" id="projects">
-        <h2>Projetos</h2>
+  <main class="mainContainer container" id="home">
+    <div class="mainContent">
+      <span>Olá, eu sou</span>
+      <h1>João Fernando A. Brigido</h1>
+      <p>Me interesso por UI/UX Design e Desenvolvimento Front-end</p>
+      <a href="#projetos" class="btnProjetos">Ver Projetos</a>
+      <span>ou</span>
+      <a href="#sobre" class="btnSobre">Sobre Mim</a>
+    </div>
+    <div>
+      <img src="./imgs/svgs/webDeveloperIlustracao.svg" alt="Ilustração Principal">
+    </div>
+  </main>
 
-        <div class="slide-wrapper">
-            <ul class="custom-controls">
-                <li> </li>
-                <li> </li>
-                <li> </li>
-                <li> </li>
-            </ul>
+  <section class="quebra">
+    <div class="container">
+      <p>Programação é arte, Gambiarra faz parte.</p>
+    </div>
+  </section>
 
-            <ul class="slide">
-                <li>
-                    <div>
-                        <img src="./img/controleFinanceiroImg.png">
-                    </div>
-                    <span>Controle Financeiro</span>
-                    <p>Aplicação Web que faz o controle de receitas e despezas. Confira o projeto em <a target="_blank" href="https://joaofbrigido.github.io/controle-financeiro/">joaofbrigido.github.io/controle-financeiro</a>
-                    </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/animaisFantasticosImg.png">
-                    </div>
-                    <span>Animais Fantásticos</span>
-                    <p>Site utilizando vários recursos do Javascript. Feito no curso completo de Javascript da Origamid.
-                        Confira o projeto em <a target="_blank" href="https://joaofbrigido.github.io/animais-fantasticos">joaofbrigido.github.io/animais-fantasticos</a>
-                    </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/cotacoesImg.png">
-                    </div>
-                    <span>Cotações</span>
-                    <p>Aplicação Web que faz a cotação de Moedas (Dólar e Euro), Bolsa (IBOV), Taxas (CDI E Selic), utilizando a API do HGFinance. Confira o projeto em <a target="_blank" href="https://joaofbrigido.github.io/cotacoes">joaofbrigido.github.io/cotacoes</a>
-                    </p>
-                </li>
-                <li>
-                    <div>
-                        <img src="./img/calculoImcImg.png">
-                    </div>
-                    <span>Cálculo de IMC</span>
-                    <p>Aplicação Web capaz de fazer o cálculo de IMC. Confira o projeto em <a target="_blank" href="https://joaofbrigido.github.io/calculo-imc">joaofbrigido.github.io/calculo-imc</a></p>
-                </li>
-            </ul>
-        </div>
-    </section>
+  <section class="container" id="projetos">
+    <div class="titulo">
+      <h3>Portfólio</h3>
+      <h2>Projetos Recentes</h2>
+    </div>
 
-    <footer>
-        <div class="footer">
-            <span>João Fernando Amaral Brigido © 2021</span>
-            <a href="https://github.com/joaofbrigido" target="_blank">
-                Github: github.com/joaofbrigido
-            </a>
-        </div>
-    </footer>
+    <div class="projetos">
+      <ul>
+        <li>
+          <div class="liContentHover">
+            <h4 class="animeUp">Controle Financeiro</h4>
+            <p class="animeUp">Aplicação Web que faz o controle de receitas e despezas.</p>
+            <a href="https://joaofbrigido.github.io/controle-financeiro/" target="_blanck" class="animeUp">Ver Projeto</a>
+            <a href="https://github.com/joaofbrigido/controle-financeiro" target="_blanck" class="animeUp">Ver Github</a>
+          </div>
+        </li>
+        <li>
+          <div class="liContentHover">
+            <h4 class="animeUp">Animais Fantásticos</h4>
+            <p class="animeUp">Site utilizando vários recursos do Javascript. Feito no curso completo de Javascript da Origamid. </p>
+            <a href="https://joaofbrigido.github.io/animais-fantasticos/" target="_blanck" class="animeUp">Ver Projeto</a>
+            <a href="https://github.com/joaofbrigido/animais-fantasticos" target="_blanck" class="animeUp">Ver Github</a>
+          </div>
+        </li>
+        <li>
+          <div class="liContentHover">
+            <h4 class="animeUp">Cotações</h4>
+            <p class="animeUp">Aplicação Web que faz a cotação de Moedas (Dólar e Euro), Bolsa (IBOV), Taxas (CDI E Selic), utilizando a API do HGFinance. </p>
+            <a href="https://joaofbrigido.github.io/cotacoes/" target="_blanck" class="animeUp">Ver Projeto</a>
+            <a href="https://github.com/joaofbrigido/cotacoes" target="_blanck" class="animeUp">Ver Github</a>
+          </div>
+        </li>
+        <li>
+          <div class="liContentHover">
+            <h4 class="animeUp">Cálculo de IMC</h4>
+            <p class="animeUp">Aplicação Web capaz de fazer o cálculo de IMC.</p>
+            <a href="https://joaofbrigido.github.io/calculo-imc/" target="_blanck" class="animeUp">Ver Projeto</a>
+            <a href="https://github.com/joaofbrigido/calculo-imc" target="_blanck" class="animeUp">Ver Github</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <img class="ornament1" src="./img/enfeiteDeitado.svg">
+  <section class="habilidades container" id="habilidades">
+    <div class="titulo">
+      <h3>Principais Habilidades</h3>
+      <h2>Skills</h2>
+    </div>
 
-    <script type="module" src="./js/script.js"></script>
+    <div class="skills">
+      <ul>
+        <li>
+          <div class="skillContent">
+            <img src="./imgs/svgs/IconHtmlCss.svg" alt="Icone HTML/CSS">
+            <h4>HTML5/CSS3</h4>
+            <span>1 ano</span>
+          </div>
+        </li>
+        <li>
+          <div class="skillContent">
+            <img src="./imgs/svgs/IconJS.svg" alt="Icone JavaScript">
+            <h4>Javascript</h4>
+            <span>1 ano</span>
+          </div>
+        </li>
+        <li>
+          <div class="skillContent">
+            <img src="./imgs/svgs/IconReact.svg" alt="Icone React">
+            <h4>React JS</h4>
+            <span>Estudando</span>
+          </div>
+        </li>
+        <li>
+          <div class="skillContent">
+            <img src="./imgs/svgs/IconXD.svg" alt="Icone AdobeXD">
+            <h4>Adobe XD</h4>
+            <span>1 ano e meio</span>
+          </div>
+        </li>
+        <li>
+          <div class="skillContent">
+            <img src="./imgs/svgs/IconRedux.svg" alt="Icone Redux">
+            <h4>Redux</h4>
+            <span>Próximo a estudar</span>
+          </div>
+        </li>
+        <li>
+          <div class="skillContent">
+            <img src="./imgs/svgs/IconWordpress.svg" alt="Icone Wordpress">
+            <h4>Wordpress</h4>
+            <span>Interesse</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sobre container" id="sobre">
+    <div class="titulo">
+      <h3>Algumas Palavras</h3>
+      <h2>Sobre Mim</h2>
+    </div>
+
+    <div class="sobreContent">
+      <img src="./imgs/svgs/sobreSvg.svg" alt="Ilustração Sobre">
+      <p>Estou atualmente cursando Ciência da Computação no UNISAGRADO (Bauru - SP). <br><br> Focado em Desenvolvimento Web: Front-end, o qual é a área que eu mais me interesso. Tenho experiência em projetos utilizando HTML5, CSS3, Javascript, React, Adobe XD.</p>
+    </div>
+  </section>
+
+  <section class="contato" id="contato">
+    <div class="titulo">
+      <h3>Entre em Contato</h3>
+      <h2>Contato</h2>
+    </div>
+
+    <div class="contatoContent container">
+      <ul>
+        <li>
+          <img src="imgs/svgs/IconWhats.svg" alt="Icon Whats">
+          <p>(14) 99683-0102</p>
+        </li>
+        <li>
+          <img src="imgs/svgs/IconEmail.svg" alt="Icon Email">
+          <p>joaofbrigido@hotmail.com</p>
+        </li>
+        <li>
+          <img src="imgs/svgs/IconGitHub.svg" alt="Icon GitHub">
+          <a href="https://github.com/joaofbrigido" target="_blanck">Github</a>
+        </li>
+        <li>
+          <img src="imgs/svgs/IconLinkedin.svg" alt="Icon Linkedin">
+          <a href="https://www.linkedin.com/in/jo%C3%A3o-fernando-amaral-brigido-21a207175/" target="_blanck">Linkedin</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Página Desenvolvida por mim - 2021</p>
+  </footer>
+
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

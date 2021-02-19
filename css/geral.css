@@ -58,6 +58,7 @@ h4 {
 
 .titulo {
   text-align: center;
+  padding-top: 1.2rem;
 }
 
 /* HOME */
@@ -138,8 +139,8 @@ h4 {
 .quebra {
   width: 100%;
   background-color: #302a2a;
-  margin-top: 5rem;
-  margin-bottom: 4rem;
+  margin-top: 5.5rem;
+  margin-bottom: 3.5rem;
   padding: 3rem;
 }
 
@@ -304,7 +305,7 @@ h4 {
   margin: 4rem 0;
 }
 
-.sobreContent section{
+.sobreContent section {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -327,8 +328,12 @@ h4 {
 .contato {
   width: 100%;
   background: linear-gradient(var(--color-gradient));
-  margin-top: 4.5rem;
+  margin-top: 6rem;
   padding: 2.5rem 1.5rem 0 1.5rem;
+}
+
+.contato div.titulo {
+  margin-top: -2rem;
 }
 
 .contato .titulo h3 {

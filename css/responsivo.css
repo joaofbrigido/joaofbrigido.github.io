@@ -97,4 +97,26 @@
   .btnMenu {
     display: none;
   }
+
+  .projetos ul li {
+    width: 300px;
+    height: 400px;
+  }
+  .projetos ul li:nth-child(1) {
+    background: url('../imgs/controleImgM.png') no-repeat center center;
+    background-size: cover;
+  }
+  .projetos ul li:nth-child(2) {
+    background: url('../imgs/animaisFantasticosImgM.png') no-repeat center
+      center;
+    background-size: cover;
+  }
+  .projetos ul li:nth-child(3) {
+    background: url('../imgs/cotacoesImgM.png') no-repeat center center;
+    background-size: cover;
+  }
+  .projetos ul li:nth-child(4) {
+    background: url('../imgs/calculoImcImgM.png') no-repeat center center;
+    background-size: cover;
+  }
 }

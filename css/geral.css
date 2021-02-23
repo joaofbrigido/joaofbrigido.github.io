@@ -361,9 +361,15 @@ h4 {
   margin: 3rem 1rem;
 }
 
+.contatoContent ul li a {
+  display: flex;
+  align-items: center;
+}
+
 .contatoContent ul li img {
   margin-right: 1rem;
 }
+
 
 .contatoContent ul li p,
 .contatoContent ul li a {

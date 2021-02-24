@@ -30,6 +30,9 @@
 }
 
 @media (max-width: 570px) {
+  .mainContent {
+    margin-top: 3rem;
+  }
   .mainContent,
   .mainContainer div img {
     padding: 1rem;
@@ -95,7 +98,8 @@
   }
 
   .btnMenu {
-    display: none;
+    position: absolute;
+    left: 19px;
   }
 
   .projetos ul li {

@@ -278,12 +278,8 @@ h4 {
 .skills ul li:hover {
   background-color: black;
   color: white;
-  border: 2px solid #e4373d;
+  border: 2.5px solid #e4373d;
   transform: scale(1.04);
-}
-.skills ul li:hover img {
-  filter: sepia(0) saturate(0);
-  transition: 0.3s;
 }
 
 .skills ul li img {

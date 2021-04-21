@@ -50,20 +50,20 @@
   animation: show-menu 0.6s forwards;
 }
 
-[data-anime='scroll'] section {
+[data-anime="scroll"] section {
   opacity: 0;
 }
 
-[data-anime='scroll'].activeAnime section {
+[data-anime="scroll"].activeAnime section {
   opacity: initial;
   animation: show-up 0.4s forwards;
 }
 
-[data-anime='scroll'].activeAnime.animeLeft section {
+[data-anime="scroll"].activeAnime.animeLeft section {
   opacity: initial;
   animation: show-left 0.4s forwards;
 }
-[data-anime='scroll'].activeAnime.animeRight section {
+[data-anime="scroll"].activeAnime.animeRight section {
   opacity: initial;
   animation: show-right 0.4s forwards;
 }

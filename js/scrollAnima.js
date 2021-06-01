@@ -16,7 +16,7 @@ export default function AnimaAoScroll() {
 
   const sections = document.querySelectorAll('[data-anime="scroll"]');
   if (sections.length) {
-    const windowMetade = window.innerHeight * 0.85;
+    const windowMetade = window.innerHeight * 0.95;
     const animaClass = 'activeAnime';
 
     function animaScroll() {
